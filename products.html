@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>RZR GT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media-queries.css">
+  <script src="js/modernizr-2.5.3.js"></script>
+  <script src="js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <header>
+   <img src="assets/logo.png" alt=""/>
+    <nav class="group">
+      <h2 class="navheader slide-trigger">Menu </h2>
+      <ul class="navigation group">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li class="current"><a href="#">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav><br/>
+  </header>
+  
+  <section>
+  
+  <aside>
+    <section class="related">
+    <nav class="group2">
+	<h2>Additional Information</h2>
+    <h2 class="navheader slide-trigger">Additional Information</h2>
+				<ul class="navigation2 group">                
+				                    <li><a href="#">Building the Chassis</a></li>
+				                    <li><a href="#">Putting Kit Together</a></li>
+				                    <li><a href="#">Interior Ideas</a></li>	
+                                   			                    
+				                </ul>
+                               </nav>
+            </section>
+			
+			
+    
+</aside> <!-- end aside sidebar -->
+  
+  <div id="main">
+    <h2>Products</h2>
+   <p>Please hover over an image to see a different color on the car.</p>
+   <div id="prod_images">
+<p><img src="assets/blue.png" class="img" alt="blue_car"/> 
+<img src="assets/gray.png" class="img" alt="gray_car"/>
+<img src="assets/green.png" class="img" alt="green_car"/>
+<img src="assets/oranged.png" class="img" alt="oranged_car"/>
+<img src="assets/purple.png"class="img"  alt="purple_car"/>
+<img src="assets/hpink.png" class="img" alt="pink_car"/></p>
+<p class="img_mes">
+
+</p>
+</div> <!-- prod_images div -->
+
+
+<script type="text/javascript">
+ jQuery(function(){
+     $(".img").hover(
+          function(){this.src = this.src.replace("blue","aqua");},
+          function(){this.src = this.src.replace("aqua","blue");
+		  
+     });
+	 
+	 $(".img").hover(
+          function(){this.src = this.src.replace("oranged","red");},
+          function(){this.src = this.src.replace("red","oranged");
+		  
+     });
+	 
+	 $(".img").hover(
+          function(){this.src = this.src.replace("gray","blue2");},
+          function(){this.src = this.src.replace("blue2","gray");
+		  
+     });
+	 
+	  $(".img").hover(
+          function(){this.src = this.src.replace("purple","pink");},
+          function(){this.src = this.src.replace("pink","purple");
+		  
+     });
+	 
+	 $(".img").hover(
+          function(){this.src = this.src.replace("hpink","dgray");},
+          function(){this.src = this.src.replace("dgray","hpink");
+		  
+     });
+	
+	 $(".img").hover(
+          function(){this.src = this.src.replace("orange","yellow");},
+          function(){this.src = this.src.replace("yellow","orange");
+		  
+     });
+	  $(".img").hover(
+          function(){this.src = this.src.replace("green","ogreen");},
+          function(){this.src = this.src.replace("ogreen","green");
+		  
+     });
+});
+</script>
+
+</article>
+    
+
+  </section>
+  
+  <div class="push"></div> 
+    
+  <footer>
+  <p>&copy; 2014 RZR GT</p>
+  </footer>
+</div><!-- end of .wrapper -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/modernizr-2.5.3.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>  
+
+</body>
+</html>

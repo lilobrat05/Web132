@@ -1,0 +1,97 @@
+@media only screen and (max-width: 560px) {
+  .slide-trigger { 
+  display: block;
+  
+}
+
+.no-js .slide-trigger{ 
+	display: none; 
+}
+	
+.navigation { 
+	display: none; 
+}
+  
+.no-js .navigation { 
+	display: block; 
+}
+	
+.navigation { 
+	margin: 0 15px; 
+}
+
+.navigation li { 
+	float: none; 
+}
+
+.navigation li a{
+	 border-bottom: 1px solid #fff; 
+	  border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -moz-border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -webkit-border: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+}
+
+
+/*760px*/
+@media only screen and (max-width: 1070px) {
+
+aside{
+	display: block;
+}
+
+footer p {
+	padding: none;
+	
+}
+
+@media only screen and (max-width: 700px) {
+
+form#contact #submit {
+	width: 78%;
+	margin-left: -1%;
+	
+}
+
+}
+
+@media only screen and (max-width: 860px) {
+	
+.navigation2 { 
+	display: none; 
+}
+  
+ .navigation2{ 
+	display: block; 
+}
+	
+.navigation2 { 
+	margin: 0 15px; 
+}
+
+.navigation2 li { 
+	float: none; 
+}
+
+.navigation2 li a {
+	 border-bottom: 1px solid #fff; 
+	  border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -moz-border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -webkit-border: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+}
+
+aside h2{
+	display: none;
+}
+}
+
+@media only screen and (max-width: 1080px){
+aside {
+	display: block;
+	float: none;	
+	width: auto;
+}
+	
+footer p {
+	padding: none;
+}
+}

@@ -1,0 +1,495 @@
+@charset "utf-8";
+/*  ========================================= RESET =========================================
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+
+	
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, 
+hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+article, aside, figure, footer, header, 
+hgroup, nav, section {
+	 display:block; 
+}
+
+nav ul { 
+	list-style:none; 
+}
+
+blockquote, q {
+	 quotes:none; 
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	 content:none; 
+}
+
+a { 
+	margin:0; 
+	padding:0;
+	 font-size:100%; 
+	 vertical-align:baseline; 
+	 background:transparent; 
+}
+
+ins {
+	 background-color:#ff9; 
+	 color:#000; 
+	 text-decoration:none; 
+}
+
+mark { 
+	background-color:#ff9; 
+	color:#000; 
+	font-style:italic; 
+	font-weight:bold; 
+}
+
+del { 
+	text-decoration: line-through; 
+}
+
+abbr[title], dfn[title] { 
+	border-bottom:1px dotted #000;
+	 cursor:help; 
+}
+
+/* tables still need cellspacing="0" in the markup */
+table { 
+	border-collapse:collapse; 
+	border-spacing:0; 
+}
+
+hr { 
+	display:block; 
+	height:1px;
+	 border:0; 
+	 border-top:1px solid #ccc;
+	  margin:1em 0; 
+	  padding:0; 
+}
+
+input, select { 
+	vertical-align:middle; 
+}
+
+pre,
+code,
+kbd,
+samp { 
+	font-family: monospace, sans-serif;
+}
+
+html { 
+	overflow-y: scroll; 
+}
+
+button {  
+	width: auto; 
+	overflow: visible; 
+}
+
+.ie7 img {
+	 -ms-interpolation-mode: bicubic; 
+}
+/* END RESET CSS */
+
+/*
+============================================
+    BASE
+============================================
+*/
+
+body { 
+	background: url(assets/background.png);
+	font-size: 1.25em; 
+	font-family: Lithos Pro; 
+	color: #FFF; 
+	line-height: 1.618em; 
+	-webkit-transition-property: font-size;
+	-moz-transition-property: font-size;
+	transition-property: font-size;
+	-webkit-transition-duration: 0.5s, 0.5s;
+	-moz-transition-duration: 0.5s, 0.5s;
+	transition-duration: 0.5s, 0.5s; 
+	-webkit-transition-timing function: linear, ease-in;
+	-moz-transition-timing function: linear, ease-in; 
+	transition-timing function: linear, ease-in; 
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, dl, address { 
+	padding: 10px 5px; 
+	margin: 0 10px; 
+}
+
+h1 {
+	 font-size: 36px; 
+}
+
+h2 { 
+	font-family: Lithos Pro; 
+	font-size: 18px; 
+	padding: 10px; 
+	-webkit-transition-property: font-size;
+	-moz-transition-property: font-size;
+	transition-property: font-size;
+	-webkit-transition-duration: 0.5s, 0.5s;
+	-moz-transition-duration: 0.5s, 0.5s;
+	transition-duration: 0.5s, 0.5s; 
+	-webkit-transition-timing function: linear, ease-in;
+	-moz-transition-timing function: linear, ease-in; 
+	transition-timing function: linear, ease-in; 
+}
+
+p, ul, ol, dl, address { 
+	font-size: 16px; 
+	max-width: 630px; 
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, dl, address { 
+	line-height: 1.618em; 
+}
+
+a { 
+	color: #0fcaf2; 
+	text-decoration: none; 
+}
+
+.wrapper { 
+	 margin: 10px auto; 
+	 max-width: 980px; 
+	 width: 90%; 
+	 background: url(assets/trans2.png); 
+	 padding: 10px 0; 
+	
+}
+
+aside { 
+	float: right; 
+	width: 35%; 
+	display: block;
+	position: relative;
+}
+
+aside section {
+	overflow: hidden;
+}
+
+#main img{
+	width: 60%;
+}
+
+#prod_images img {
+	width: 30%
+}
+
+/*Slide Show Styles*/
+.slideshow {  
+	float: left;
+	width: 85%;
+    height: 14em;/*300px*/;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	
+}  
+  
+/*styling for the slideshow on the homepage */
+ul.slideshow {
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  }
+  
+ul.slideshow li {
+ 
+  left: 0;
+  right: 0;
+  width: 100%
+  text-align: center;}
+ 
+ul.slideshow li.show {
+  z-index: 500;}
+ 
+ul img {
+  border: none;
+  position: absolute;
+  
+}
+ 
+#slideshow-caption {
+  width: 70%;
+  height: 4em; /*38px*/
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  z-index: 500;
+  padding-bottom: 5%
+  }
+ 
+#slideshow-caption .slideshow-caption-container {
+  padding: 10px 25px 10px 25px; 
+  background: transparent url(assets/trans.png) repeat;  
+  z-index: 1000;}
+ 
+#slideshow-caption p {
+  padding: 0;
+  font: normal 130%  Lithos Pro;
+  color: #FFF;
+  text-shadow: 1px 1px #000;}*/
+ 
+
+/*Footer styles*/
+footer {
+	clear: both;
+	font-size: .9em;
+	padding: 5px;
+	background: url(assets/navback.png);
+	height: 3em;
+	overflow: hidden;	 
+	width: 95%; 
+ 	margin: 0 auto;
+	position: relative;
+	border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -moz-border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -webkit-border: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+	
+}
+
+footer p {
+	text-align: center;
+	padding-left: 10em;
+}
+
+.push {
+	height: 3em;
+}
+
+
+ /* Form Styles */
+
+#form {
+	height: 35em;
+}
+
+form#contact {
+    margin:0 auto;
+    width: 65%/*459px*/;
+	padding-bottom: 4%;
+	float: left;
+	padding-left: 2.5%;
+	padding-top: 0;
+}
+
+form#contact legend{
+	float: right;
+	padding-right: 7em;
+}
+
+/* Style the text boxes */
+form#contact input, textarea {
+	width: 65% /*439px*/;
+	height: 1em; /*15px*/
+	background: #efefef;
+	border: 1px solid #dedede;
+	padding: 1em /*10px*/;
+	margin-top: 3px;
+	font-size: 0.9em;
+	color:#3a3a3a;
+}
+
+form#contact textarea {
+	height: 10em; /*213px*/
+	background: #efefef;
+}
+
+form#contact input, textarea {
+    width: 75% /*439px*/;
+    height: 3em /*37px*/;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+
+form#contact #submit { 
+  font: 1em  Lithus Pro;
+  border: 1px solid #FFF; 
+  width: 25% /*99px*/; 
+  margin: 0 0 0 206px; 
+  height: 2em; /*26px*/;
+  padding: 2px 0 3px 0;
+  cursor: pointer; 
+  position: relative;
+  background: #4A6506;
+  background: -moz-linear-gradient(#600, #000);
+  background: -o-linear-gradient(#82AC10, #4A6506);
+  background: -webkit-linear-gradient(#82AC10, #4A6506);
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  color: #FFF;
+  text-shadow: 1px 1px #000;
+  
+}
+
+aside img{
+		max-width: 100%;
+	}
+	
+.related li {
+    list-style-type: none
+}
+.related h3 {
+    line-height: 1em;
+    margin-bottom: 0em;
+}
+.related time {
+    display: block;
+    font-family: Lithos Pro;
+    font-size: .625em;
+    line-height: 1em;
+    margin-bottom: 1.5em;
+}
+.related a{
+     display:block;
+	 color: #F00;
+     border-bottom: 1px dotted #999;
+     padding: .3125em 0; /* 5px / 16px */
+} 
+
+
+
+/* self clearing floats */
+.group:after,.lastUnit:after {
+	clear:both;
+	display:block;
+	visibility:hidden;
+	overflow:hidden;
+	height:0 !important;
+	line-height:0;
+	font-size:xx-large;
+	content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";}
+
+.group{
+	*zoom:1;
+}
+
+/*
+============================================
+    Styles for Responsive menu
+============================================
+*/
+
+.navheader{
+  font-size: 12px;
+  background: url(assets/navback.png);
+   border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -moz-border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -webkit-border: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+}
+
+
+.slide-trigger{
+  
+  display: none; /* need this */
+  cursor: pointer;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.slide-trigger span {
+  background-position: 0 -14px;
+  display: block;
+  float: right;
+  margin-top: 3px;
+  height: 14px;
+  width: 32px;
+}
+
+.navigation {
+  max-width: none;
+  background: url(assets/navback.png);
+  padding: 0;
+  border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -moz-border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -webkit-border: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+}
+
+.navigation2 {
+  width: 65%;
+  padding: 0;
+  border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -moz-border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -webkit-border: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+}
+
+.navigation li {
+  float: left;
+ 
+}
+
+.navigation2 li {
+  float: left;
+  padding-bottom: 1em;
+}
+
+
+.navigation li a {
+  display: block;
+  color: #fff;
+  padding: 10px;
+}
+
+.navigation2 li a {
+  display: block;
+  color: #fff;
+  padding: 10px;
+}
+
+.navigation li a:hover, .current { 
+	background: url(assets/trans2.png);
+	color: #F00;
+	border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -moz-border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -webkit-border: .625em .625em .625em .625em /*6px 6px 6px 6px*/;  
+}
+
+.navigation2 li a:hover{ 
+	background: url(assets/navback.png);
+	color: #F00;
+	border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -moz-border-radius: .625em .625em .625em .625em /*6px 6px 6px 6px*/;
+    -webkit-border: .625em .625em .625em .625em /*6px 6px 6px 6px*/;  
+}
+
